@@ -1,0 +1,39 @@
+{
+  "name": "project-wizard-pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm:react-start\" \"npm:electron-start\"",
+    "react-start": "cd src/gui && npm start",
+    "electron-start": "wait-on tcp:3000 && electron .",
+    "semantic-release": "semantic-release",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "electron": "^30.0.0",
+    "concurrently": "^8.2.2",
+    "wait-on": "^7.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "husky": "^9.1.7",
+    "semantic-release": "^24.2.7",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/github": "^11.0.3",
+    "@semantic-release/npm": "^12.0.2",
+    "@semantic-release/release-notes-generator": "^14.0.3"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  }
+}
