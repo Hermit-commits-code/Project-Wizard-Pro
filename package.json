@@ -12,8 +12,12 @@
     "prepare": "husky"
   },
   "keywords": [],
-  "author": "",
+  "author": "Joseph Chu",
   "license": "ISC",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/Hermit-commits-code/Project-Wizard-Pro.git"
+},  
   "type": "commonjs",
   "dependencies": {
     "electron": "^30.0.0",
